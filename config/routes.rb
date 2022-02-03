@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   get "/about", to: "home#about"
 
-  resources :articles, only: [:index, :show, :new, :create]
+  resources :articles, only: [:index, :show, :new, :create, :edit, :update]
 end
